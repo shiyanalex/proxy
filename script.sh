@@ -28,7 +28,7 @@ server_ip=$(curl -s ifconfig.me)
 echo "Creating configuration file..."
 cat << EOF > /etc/shadowsocks-libev/config.json
 {
-    "server": "$server_ip",
+    "server": "0.0.0.0",
     "mode": "tcp_and_udp",
     "server_port": $port,
     "timeout": 300,
