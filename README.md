@@ -12,16 +12,22 @@ Shadowsocks is a secure proxy protocol inspired by SOCKS5, with built-in encrypt
    wget https://raw.githubusercontent.com/shiyanalex/proxy/refs/heads/master/script.sh -O script.sh && chmod +x script.sh && sudo ./script.sh
    ```
    (may take up to 10 min to complete, just wait)
-4. Enter port or press enter to use default 8388. Copy settings into your proxy client.
+4. Select Keep the local version currently installed. Enter port or press enter to use default 8388. Copy settings into your proxy client.
 
-5. In Google Cloud go to firewall -> Create firewall policy -> Enable TCP, enter your port and your VM network tag from step 1.
+5. In Google Cloud, go to **Firewall policies** → **Create firewall rule** → enter your VM's network tag from step 1, set **Source filter IPv4** to `0.0.0.0/0`, enable **TCP**, and enter your port number.
 
 5. Enjoy
+   
 ## Usage & Tips
 
 - **Check daily data usage**:
   ```bash
   vnstat -d
+  ```
+  
+- **To monitor bandwidth usage**:
+  ```bash
+  vnstat -l -i ens4
   ```
 
 - **Check Shadowsocks status**:
