@@ -46,9 +46,9 @@ systemctl restart shadowsocks-libev
 systemctl enable shadowsocks-libev
 
 # Display connection details
-echo "Configuration complete!"
-echo "Server IP: $server_ip"
-echo "Port: $port"
-echo "Password: $password"
-echo "Encryption Method: aes-256-gcm"
-echo "To monitor bandwidth usage, use: vnstat -l -i ens4"
+echo -e "\n\033[1;32m===== Configuration Complete! =====\033[0m"
+echo -e "\033[1;34mServer IP:\033[0m \033[1;37m$server_ip\033[0m"
+echo -e "\033[1;34mPort:\033[0m \033[1;37m$port\033[0m"
+echo -e "\033[1;34mPassword:\033[0m \033[1;37m$password\033[0m"
+echo -e "\033[1;34mEncryption Method:\033[0m \033[1;37maes-256-gcm\033[0m"
+echo -e "\033[1;32m===================================\033[0m\n"
