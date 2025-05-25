@@ -4,7 +4,7 @@ Shadowsocks is a secure proxy protocol inspired by SOCKS5, with built-in encrypt
 
 ## How to set up
 
-1. Create a VM in Google Cloud (e2-small works fine). Create random network tag for it.
+1. Create a VM in Google Cloud (e2-small works fine). In networking (left side) create a random network tag for it.
 
 2. Open the VM terminal in the browser and run:
 
